@@ -48,6 +48,8 @@ encoded = "REDACTED"
 decoded = base64.b64decode(encoded).decode()
 print(decoded)
 
+```
+
 (The python script can also be found in this repository under the name decodeCookie.py)
 
 Decoding the cookie revealed readable text containing the flag.
