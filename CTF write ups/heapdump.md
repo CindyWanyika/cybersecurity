@@ -1,10 +1,3 @@
-Perfect — this is a **great challenge to document**, and it fits your existing write-up style really well. Below is a **clean, simple, beginner-friendly write-up** in the **same markdown format** you use. You can drop this straight into a `.md` file.
-
-I kept the wording clear and not overly fancy, just solid and professional.
-
----
-
-```markdown
 # picoCTF — Heapdump / Memory Disclosure Challenge Write-Up
 
 ## Challenge Overview
