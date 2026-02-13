@@ -1,0 +1,29 @@
+from math import isqrt
+from Crypto.Util.number import long_to_bytes, inverse
+
+N = 25725893296108063193067050129331240313251978986562207544616425493192002238994393689702608071890106238926880560873286028545131208877213062629581246889857686
+e = 65537
+c = 5363554521779848663044303783296589263779167239334225623483923903224086655045947681103405154515411666515125470870831145512151421515522113520938130949655013
+
+# Fermat factorization
+a = isqrt(N)
+if a * a < N:
+    a += 1
+
+while True:
+    b2 = a*a - N
+    b = isqrt(b2)
+    if b*b == b2:
+        p = a - b
+        q = a + b
+        break
+    a += 1
+
+print("p =", p)
+print("q =", q)
+
+phi = (p-1)*(q-1)
+d = inverse(e, phi)
+
+m = pow(c, d, N)
+print(long_to_bytes(m))
