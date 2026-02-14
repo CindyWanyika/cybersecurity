@@ -93,15 +93,15 @@ That means:
 
 N=2×q
 
-This is a catastrophic RSA flaw.
+This is a risky RSA flaw.
 
 In proper RSA:
 
-Both primes must be large
+* Both primes must be large
 
-Both primes must be odd
+* Both primes must be odd
 
-2 must NEVER be used
+* 2 must NEVER be used
 
 The custom get_primes() function was incorrectly generating 2 as a prime factor.
 
@@ -110,7 +110,7 @@ The custom get_primes() function was incorrectly generating 2 as a prime factor.
 Since:
 N=2×q
 
-Factoring becomes trivial:
+Factoring becomes easy:
 
 p = 2
 q = N // 2
@@ -150,39 +150,39 @@ RSA security depends on the difficulty of factoring N.
 
 However:
 
-One of the primes was 2
+* One of the primes was 2
 
-Factoring N was immediate
+* Factoring N was immediate
 
-No advanced attacks were required
+* No advanced attacks were required
 
-This completely breaks RSA.
+* This completely breaks RSA.
 
 ## Security Takeaways
 
-RSA primes must be large and randomly generated.
+* RSA primes must be large and randomly generated.
 
-Never implement custom prime generators unless absolutely necessary.
+* Never implement custom prime generators unless absolutely necessary.
 
-Both primes must be odd.
+* Both primes must be odd.
 
-Small implementation mistakes completely destroy cryptographic security.
+* Small implementation mistakes completely destroy cryptographic security.
 
-Always rely on well-tested cryptographic libraries.
+* Always rely on well-tested cryptographic libraries.
 
 ## Skills Demonstrated
 
-RSA fundamentals
+* RSA fundamentals
 
-GCD attack
+* GCD attack
 
-Prime factorization
+* Prime factorization
 
-Euler’s Totient calculation
+* Euler’s Totient calculation
 
-Modular inverse computation
+* Modular inverse computation
 
-Practical RSA decryption
+* Practical RSA decryption
 
 ## Disclaimer
 
