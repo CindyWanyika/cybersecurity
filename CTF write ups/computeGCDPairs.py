@@ -5,7 +5,7 @@ from Crypto.Util.number import inverse, long_to_bytes
 
 e = 65537
 
-Ns = [ ]#insert N values collected
+Ns = [ ]#N values collected
 
 for i in range(len(Ns)):
     for j in range(i+1, len(Ns)):

@@ -1,4 +1,4 @@
-#from Crypto.Util.number import inverse, long_to_bytes
+from Crypto.Util.number import inverse, long_to_bytes
 
 N = "your N goes here"
 e = 65537
