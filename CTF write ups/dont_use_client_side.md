@@ -1,7 +1,6 @@
 # picoCTF Write-Up: dont-use-client-side  
 
 ## Challenge Overview
-
 This challenge presents a “Secure Login Portal” that prompts the user to enter a password. The hint, *Never trust the client,* suggests that the vulnerability likely involves improper reliance on client-side logic for authentication.
 
 The objective was to analyze how the login verification works and determine whether it could be bypassed or reversed.
@@ -60,7 +59,6 @@ This challenge reinforces a fundamental web security principle:
 **The client cannot be trusted.**
 
 ## Skills Demonstrated
-
 - Inspecting and analyzing page source
 - Reading and understanding JavaScript logic
 - Interpreting `substring()` operations
@@ -69,7 +67,6 @@ This challenge reinforces a fundamental web security principle:
 - Applying core web security principles
 
 ## Disclaimer
-
 This write-up is for educational purposes only and documents a legal Capture-The-Flag (CTF) challenge. No real systems or data were harmed.
 
 ## Challenge Link:
